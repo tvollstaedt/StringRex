@@ -1,9 +1,9 @@
 StringRex
 =========
 
-![StringRex main window](/../gh-pages/images/screenshot.png?raw=true)
-
 A GUI program which generates all strings that match a given regular expression. Useful to create a wordlist to recover a partially known password. It's based on the [Generex](https://github.com/mifmif/Generex) library.
+
+![StringRex main window](/../gh-pages/images/screenshot.png?raw=true)
 
 Building
 ========
