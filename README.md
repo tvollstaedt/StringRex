@@ -32,6 +32,6 @@ Enter the regular expression and press "Generate" to create the list of matches 
 Limitations
 ===========
 
-The RegEx syntax that is used is described in the [javadoc for the RegExp class](http://www.brics.dk/automaton/doc/index.html?dk/brics/automaton/RegExp.html).
+The used RegEx syntax is described in the [javadoc for the RegExp class](http://www.brics.dk/automaton/doc/index.html?dk/brics/automaton/RegExp.html). Note that it may differ from the syntax you are used to.
 
 **Warning** There is no limitation on the complexity of your expression or the size of the result. Be careful when designing your RegEx, generating all matched strings may require a lot of memory/time.
