@@ -1,0 +1,29 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'eu.appsatori:gradle-fatjar-plugin:0.2'
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'fatjar'
+
+sourceCompatibility = 1.5
+version = '0.1'
+
+fatJar {
+    manifest {
+        attributes("Main-Class": "de.nx02.stringrex.Main")
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile fileTree(dir: 'lib', include: '*.jar')
+}
