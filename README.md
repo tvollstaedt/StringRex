@@ -1,7 +1,7 @@
 StringRex
 =========
 
-A GUI program which generates all strings that match a given regular expression. Useful to create a wordlist to recover a partially known password. It's based on the [Generex](https://github.com/mifmif/Generex) library.
+Generates all strings that match a given regular expression. Useful to create a wordlist to recover a partially known password. It's based on the [Generex](https://github.com/mifmif/Generex) library.
 
 ![StringRex main window](/../gh-pages/images/screenshot.png?raw=true)
 
@@ -13,21 +13,27 @@ You can use the bundled gradle distribution to build.
 Unix based:
 
 ```
-./gradlew build
+./gradlew fatJar
 ```
 
 Windows:
 
 ```
-gradlew.bat build
+gradlew.bat fatJar
 ```
-
-Use the `fatjar` target, instead of `build` to create an executable jar which is started through `java -jar StringRex-0.1.jar` (or doubleclicking on most systems). 
 
 Usage
 =====
 
-Enter the regular expression and press "Generate" to create the list of matches strings. Use the "Save to file"-Button to write a word list.
+```
+java -jar StringRex-*.jar <RegEx>
+```
+
+Prints the strings that match <RegEx> to STDOUT.
+
+Running the jar with no arguments to open a small GUI. Enter the regular expression and press "Generate" to create the list of matches strings. Use the "Save to file"-Button to write a word list.
+
+
 
 Limitations
 ===========
